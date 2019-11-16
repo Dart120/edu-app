@@ -9,11 +9,11 @@ userID INTEGER PRIMARY KEY,
 username VARCHAR(20) NOT NULL,
 firstname VARCHAR(20) NOT NULL,
 surname VARCHAR(20) NOT NULL,
-password VARCHAR(20) NOT NULL);
+pass VARCHAR(20) NOT NULL);
 ''')
 
 cursor.execute("""
-INSERT INTO user(username, firstname, surname, password)
+INSERT INTO user(username, firstname, surname, pass)
 VALUES("test_User", "Bob", "Smith", "MrBob")
 """)
 
